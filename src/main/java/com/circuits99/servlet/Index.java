@@ -21,7 +21,7 @@ public class Index extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher rd=request.getRequestDispatcher("/index.html");  
-        rd.forward(request, response);
+        rd.include(request, response);
 	}
 
 }
