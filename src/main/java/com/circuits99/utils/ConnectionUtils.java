@@ -22,6 +22,7 @@ public class ConnectionUtils {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println(connection);
 		return connection;
 	}
 	public static void close(ResultSet rs, PreparedStatement ps, Connection con) {
