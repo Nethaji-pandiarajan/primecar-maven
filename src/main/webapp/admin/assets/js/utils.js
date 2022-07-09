@@ -1,5 +1,4 @@
 function validator(){
-	debugger;
 	$.ajax({
 			url : "SessionValidator",
 			type : "POST",
