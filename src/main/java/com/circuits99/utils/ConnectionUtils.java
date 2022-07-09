@@ -14,7 +14,6 @@ public class ConnectionUtils {
 		String DB_URL = "jdbc:postgresql://ec2-3-222-74-92.compute-1.amazonaws.com/da5bl47d3v2b0g";//prop.getProperty("DB_URL");
 		String DB_USERNAME = "rnpkwzrskpimvc";//prop.getProperty("DB_USERNAME");
 		String DB_PASSWORD = "c4d7e243169c35550a284510ff2b4d67b5de4babeae9cf9a1c10cfe0967e1d0d";//prop.getProperty("DB_PASSWORD");
-		System.out.println("DB url:-"+DB_URL);
 		Connection connection = null;
 		try {
 			Class.forName(DRIVER_CLASS);
