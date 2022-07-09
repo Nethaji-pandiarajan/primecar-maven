@@ -353,6 +353,7 @@ public class ProductDAO {
 		int count = 0;
 		try {
 			con = ConnectionUtils.createConnection();
+			System.out.println("Connection:-"+con);
 			pst = con.prepareStatement(sql);
 			rs = pst.executeQuery();
 			if (rs.next()) {
