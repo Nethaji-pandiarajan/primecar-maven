@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 		if(username != null && !username.isBlank() && password != null && !password.isBlank()) {
 			if(username.equals("admin")  && password.equals("Test@ab12")) {
 				HttpSession session = request.getSession();
-				session.setMaxInactiveInterval(60);
+				session.setMaxInactiveInterval(1200);
 				JsonObject value = new JsonObject();
 				response.setStatus(200);
 				value.addProperty("Message", "Login Successfull");
