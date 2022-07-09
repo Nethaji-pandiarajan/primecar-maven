@@ -110,7 +110,6 @@ public class ProductDAO {
 				query1.append(" WHERE " + query2);
 			}
 		}
-		System.out.println(query1);
 		return query1.toString();
 	}
 
@@ -280,7 +279,6 @@ public class ProductDAO {
 				car.setImageBash64_1(rs.getString("image1"));
 				cars.add(car);
 			}
-			pst.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
