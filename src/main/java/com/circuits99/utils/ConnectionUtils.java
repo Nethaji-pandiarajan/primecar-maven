@@ -15,6 +15,7 @@ public class ConnectionUtils {
 		String DB_URL = prop.getProperty("DB_URL");
 		String DB_USERNAME = prop.getProperty("DB_USERNAME");
 		String DB_PASSWORD = prop.getProperty("DB_PASSWORD");
+		System.out.println("DB url:-"+DB_URL);
 		Connection connection = null;
 		try {
 			Class.forName(DRIVER_CLASS);
