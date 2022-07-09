@@ -110,6 +110,7 @@ public class ProductDAO {
 				query1.append(" WHERE " + query2);
 			}
 		}
+		System.out.println(query1);
 		return query1.toString();
 	}
 
