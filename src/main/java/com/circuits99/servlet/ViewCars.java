@@ -31,7 +31,7 @@ public class ViewCars extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		JsonArray jsonArray = new JsonArray();
 		try {
-			List<Car> cars = new ProductDAO().fetchByAdmin();
+			List<Car> cars = new ProductDAO().fetchByAdmin(false);
 		    for(Car car:cars) {
 		    	JsonElement userJson = g.toJsonTree(car);
 		    	jsonArray.add(userJson);
