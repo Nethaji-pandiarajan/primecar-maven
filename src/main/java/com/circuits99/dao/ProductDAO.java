@@ -202,15 +202,19 @@ public class ProductDAO {
 		return car;
 	}
 
-	public List<Car> fetchByAdmin() {
+	public List<Car> fetchByAdmin(boolean isSold) {
 		List<Car> cars = null;
 		Connection con = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
+		String sql = "SELECT * FROM car_details";
+		if(isSold) {
+			sql = sql + " WHERE isSolded = true";
+		}
 		try {
 			cars = new ArrayList<Car>();
 			con = ConnectionUtils.createConnection();
-			pst = con.prepareStatement("SELECT * FROM car_details");
+			pst = con.prepareStatement(sql);
 			rs = pst.executeQuery();
 			while (rs.next()) {
 				Car car = new Car();
