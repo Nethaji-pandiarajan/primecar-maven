@@ -11,7 +11,7 @@ public class ConnectionUtils {
 	public static Connection createConnection() {
 //		Properties prop = PropertyFileReader.getValues();
 		String DRIVER_CLASS = "org.postgresql.Driver";//prop.getProperty("DRIVER_CLASS");
-		String DB_URL = "jdbc:postgresql://ec2-3-219-52-220.compute-1.amazonaws.com";//prop.getProperty("DB_URL");
+		String DB_URL = "jdbc:postgresql://ec2-3-219-52-220.compute-1.amazonaws.com/d1lqnd2lfi81s2";//prop.getProperty("DB_URL");
 		String DB_USERNAME = "gcubzjzfqmutgq";//prop.getProperty("DB_USERNAME");
 		String DB_PASSWORD = "396e6a098f8ccc1b1fb929b9e2267f80e5f9b94b45356971be58b8b4208e9119";//prop.getProperty("DB_PASSWORD");
 		Connection connection = null;
